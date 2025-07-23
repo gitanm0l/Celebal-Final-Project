@@ -1,0 +1,82 @@
+Intern Name: [Your Full Name]
+Internship: Celebal Technologies
+Project Duration: Week 7
+Project Title: Data Ingestion and Processing Pipeline using Azure Data Factory and Databricks
+Date: [Insert Date]
+
+🔧 Objective
+To build a data ingestion pipeline that reads CSV files (Customers, Products, Sales) from an external source using Azure Data Factory (ADF), loads them into ADLS Gen2, and processes the data using Azure Databricks and Delta Lake.
+
+🧱 Tech Stack
+Azure Data Factory: For ingesting data from FTP/HTTP sources and scheduling pipelines.
+
+Azure Data Lake Storage Gen2: For secure, scalable storage of raw and processed data.
+
+Azure Databricks: For data transformation using PySpark.
+
+Delta Lake: For maintaining versioned, reliable data lakes.
+
+Power BI / SQL (Optional): For visualizing or querying processed data.
+
+📁 Data Files
+customers.csv
+
+products.csv
+
+sales.csv
+
+Each file contains structured tabular data to simulate a retail business use case.
+
+🔗 Pipeline Flow
+Data Ingestion with ADF
+
+Configured pipelines to fetch files from source.
+
+Sink is ADLS Gen2.
+
+Trigger: Scheduled daily trigger.
+
+Added Retry Policy for fault tolerance.
+
+Processing with Databricks
+
+Created a cluster.
+
+Developed a PySpark notebook that:
+
+Reads raw CSV files from ADLS.
+
+Performs necessary transformations (e.g., date parsing).
+
+Writes the cleaned data as Delta tables.
+
+Delta Lake Output
+
+Tables stored in /processed/ zone of ADLS.
+
+Version control, schema enforcement applied.
+
+📸 Screenshots Added
+ADF Pipeline Diagram
+
+Sample CSV Data Preview
+
+Databricks Notebook Preview
+
+Final Delta Table Outputs
+
+✅ Outcome
+Successfully ingested and transformed data end-to-end.
+
+Automated fault-tolerant pipeline with retries.
+
+Leveraged Azure Databricks and Delta Lake for scalable analytics.
+
+📦 Project Deliverables
+data_ingestion_notebook.ipynb
+
+Sample input files (customers.csv, sales.csv, products.csv)
+
+Folder for ADF JSONs/screenshots
+
+README and this Project Report

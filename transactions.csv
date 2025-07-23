@@ -1,0 +1,4 @@
+TransactionID,CustomerID,ProductID,Quantity,Date
+301,201,101,1,2025-07-01
+302,202,103,2,2025-07-02
+303,203,102,1,2025-07-03

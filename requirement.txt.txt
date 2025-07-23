@@ -1,0 +1,6 @@
+pyspark==3.4.1
+pandas
+azure-storage-blob
+openpyxl
+pyarrow
+delta-spark==2.4.0
